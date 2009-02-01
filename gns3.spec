@@ -10,6 +10,7 @@ BuildArch: noarch
 Requires: python-qt4
 Requires: dynagen
 #Suggests: pemu
+BuildRequires: python-qt4
 Buildroot: %{_tmppath}/%{name}-root
 
 %description
