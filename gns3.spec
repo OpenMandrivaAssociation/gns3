@@ -11,6 +11,7 @@ Requires: python-qt4
 Requires: dynagen
 #Suggests: pemu
 BuildRequires: python-qt4
+BuildRequires: python-devel
 Buildroot: %{_tmppath}/%{name}-root
 
 %description
