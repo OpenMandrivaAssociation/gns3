@@ -1,18 +1,18 @@
-Name: gns3
-Version: 0.6.1
-Release: %mkrel 1
-Summary: Graphical network simulator that allows simulation of complex networks
-URL: http://www.gns3.net/
-Source: http://downloads.sourceforge.net/gns-3/GNS3-%{version}-src.tar.gz
-License: GPLv2
-Group: Emulators
-BuildArch: noarch
-Requires: python-qt4
-Requires: dynagen
+Name:		gns3
+Version:	0.7
+Release:	%mkrel 1
+Summary:	Graphical network simulator that allows simulation of complex networks
+URL:		http://www.gns3.net/
+Source:		http://downloads.sourceforge.net/gns-3/GNS3-%{version}-src.tar.gz
+License:	GPLv2+
+Group:		Emulators
+BuildArch:	noarch
+Requires:	python-qt4
+Requires:	dynagen
 #Suggests: pemu
-BuildRequires: python-qt4
-BuildRequires: python-devel
-Buildroot: %{_tmppath}/%{name}-root
+BuildRequires:	python-qt4
+BuildRequires:	python-devel
+Buildroot:	%{_tmppath}/%{name}-root
 
 %description
 GNS3 is a graphical network simulator that allows simulation of complex
