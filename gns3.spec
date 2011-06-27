@@ -1,5 +1,5 @@
 Name:		gns3
-Version:	0.7.3
+Version:	0.7.4
 Release:	%mkrel 1
 Summary:	Graphical network simulator that allows simulation of complex networks
 URL:		http://www.gns3.net/
