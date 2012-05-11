@@ -1,9 +1,9 @@
 Name:		gns3
-Version:	0.7.4
-Release:	%mkrel 1
+Version:	0.8.2
+Release:	1
 Summary:	Graphical network simulator that allows simulation of complex networks
 URL:		http://www.gns3.net/
-Source:		http://downloads.sourceforge.net/gns-3/GNS3-%{version}-src.tar.gz
+Source0:	http://downloads.sourceforge.net/gns-3/GNS3-%{version}-src.tar.gz
 License:	GPLv2+
 Group:		Emulators
 BuildArch:	noarch
@@ -12,7 +12,7 @@ Requires:	dynagen
 #Suggests: pemu
 BuildRequires:	python-qt4
 BuildRequires:	python-devel
-Buildroot:	%{_tmppath}/%{name}-root
+Patch0:		local_path_removed.patch
 
 %description
 GNS3 is a graphical network simulator that allows simulation of complex
@@ -33,12 +33,12 @@ configurations that need to be deployed later on real routers.
 
 %prep
 %setup -q -n GNS3-%{version}-src
+%patch0 -p1
 
 %build
 python setup.py build
 
 %install
-rm -Rf %{buildroot}
 python setup.py install --root=%{buildroot}
 
 mkdir -p %{buildroot}%{_datadir}/applications
@@ -53,13 +53,11 @@ StartupNotify=true
 Categories=X-MandrivaLinux-MoreApplications-Emulators;Emulator;
 EOF
 
-%clean
-rm -Rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %{_bindir}/%{name}
 %{py_sitedir}/GNS3*
 %{_datadir}/applications/mandriva-%{name}.desktop
+%{_datadir}/examples/gns3/baseconfig.txt
+%{_prefix}/libexec/%{name}
 %defattr(644,root,root,755)
 %doc AUTHORS README CHANGELOG
