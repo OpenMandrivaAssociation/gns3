@@ -1,0 +1,14 @@
+diff --git a/setup.py b/setup.py
+index aafac63..1103698 100644
+--- a/setup.py
++++ b/setup.py
+@@ -220,7 +220,7 @@ else:
+                 'GNS3.Ui.ConfigurationPages',
+                 'GNS3.Langs'],
+           package_data = { 'GNS3': ['Langs/*.qm', 'Dynagen/configspec'] },
+-          data_files = [ ('/usr/local/libexec/gns3/', ['qemuwrapper/qemuwrapper.py', 'vboxwrapper/vboxcontroller_4_1.py', 'vboxwrapper/vboxwrapper.py']),
+-                        ('/usr/local/share/examples/gns3/', ['baseconfig.txt'])]
++          data_files = [ ('/usr/libexec/gns3/', ['qemuwrapper/qemuwrapper.py', 'vboxwrapper/vboxcontroller_4_1.py', 'vboxwrapper/vboxwrapper.py']),
++                        ('/usr/share/examples/gns3/', ['baseconfig.txt'])]
+     )
+ 
