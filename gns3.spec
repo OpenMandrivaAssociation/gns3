@@ -61,3 +61,41 @@ EOF
 %{_prefix}/libexec/%{name}
 %defattr(644,root,root,755)
 %doc AUTHORS README CHANGELOG
+
+
+%changelog
+* Fri May 11 2012 Alexander Khrukin <akhrukin@mandriva.org> 0.8.2-1
++ Revision: 798278
+- version update 0.8.2
+
+* Mon Jun 27 2011 Buchan Milne <bgmilne@mandriva.org> 0.7.4-1
++ Revision: 687476
+- update to new version 0.7.4
+
+* Tue Feb 22 2011 Buchan Milne <bgmilne@mandriva.org> 0.7.3-1
++ Revision: 639382
+- update to new version 0.7.3
+
+* Fri Nov 12 2010 Bogdano Arendartchuk <bogdano@mandriva.com> 0.7.2-2mdv2011.0
++ Revision: 596946
+- rebuild for python 2.7
+
+* Tue Sep 07 2010 Buchan Milne <bgmilne@mandriva.org> 0.7.2-1mdv2011.0
++ Revision: 576589
+- update to new version 0.7.2
+
+* Mon Mar 01 2010 Sandro Cazzaniga <kharec@mandriva.org> 0.7-1mdv2010.1
++ Revision: 513037
+- update to 0.7
+- fix license
+
+* Thu May 14 2009 Frederik Himpe <fhimpe@mandriva.org> 0.6.1-1mdv2010.0
++ Revision: 375721
+- update to new version 0.6.1
+
+* Sun Feb 01 2009 Buchan Milne <bgmilne@mandriva.org> 0.6-1mdv2009.1
++ Revision: 336213
+- More buildrequires
+- Fix buildrequires
+- import gns3
+
