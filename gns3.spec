@@ -2,7 +2,7 @@ Name:		gns3
 Version:	0.8.2
 Release:	2
 Summary:	Graphical network simulator that allows simulation of complex networks
-URL:		http://www.gns3.net/
+URL:		https://www.gns3.net/
 Source0:	http://downloads.sourceforge.net/gns-3/GNS3-%{version}-src.tar.gz
 License:	GPLv2+
 Group:		Emulators
